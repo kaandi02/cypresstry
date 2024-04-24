@@ -6,7 +6,7 @@ import { PASSENGER_DETAILS, SOURCE_STATION, DESTINATION_STATION, TRAIN_NO, TRAIN
 
 describe('IRCTC TATKAL BOOKING', () => {
   it('Tatkal Booking Begins......', () => {
-    cy.viewport(1478, 1056)
+    cy.viewport(1920, 1080)
     cy.visit('https://www.irctc.co.in/nget/train-search')
     cy.get('.h_head1 > .search_btn').click()
     cy.get(':nth-child(1) > .form-control').invoke('val', username).trigger('input')
@@ -189,7 +189,7 @@ describe('IRCTC TATKAL BOOKING', () => {
 
 
           // Choosing UPI As Payment Option while filling passenger details
-          cy.get('#\\32  > .ui-radiobutton > .ui-radiobutton-box').click()
+          cy.get('#\\33 > .ui-radiobutton > .ui-radiobutton-box').click()
 
           // Proceed to NEXT STEP Final Confirmation 
           cy.get('.train_Search').click()
@@ -217,15 +217,15 @@ describe('IRCTC TATKAL BOOKING', () => {
           // if next page opens which is review booking stage
           cy.solveCaptcha().then(() => {
             // BHIM UPI At Gateway Confirmation
-            cy.get(':nth-child(3) > .col-pad').click()
-            cy.get('.col-sm-9 > app-bank > #bank-type').click()
-            cy.get('.col-sm-9 > app-bank > #bank-type > :nth-child(2) > table > tr > :nth-child(1) > .col-lg-12 > .border-all > .col-xs-12 > .col-pad').click()
+            cy.get('.ng-star-inserted:nth-child(2) > .col-pad').click()
+            //cy.get('.col-sm-9 > app-bank > #bank-type').click()
+            //cy.get('.col-sm-9 > app-bank > #bank-type > :nth-child(2) > table > tr > :nth-child(1) > .col-lg-12 > .border-all > .col-xs-12 > .col-pad').click()
 
             // Clicking Pay And book
             cy.get('.btn').click()
 
 
-            cy.intercept("/theia/processTransaction?orderid=*").as("payment")
+            /*cy.intercept("/theia/processTransaction?orderid=*").as("payment")
 
             // ...
             // https://securegw.paytm.in/theia/processTransaction?orderid=100004437462426
@@ -243,7 +243,7 @@ describe('IRCTC TATKAL BOOKING', () => {
               }
 
 
-            })
+            })*/
 
 
 

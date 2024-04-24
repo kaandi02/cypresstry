@@ -1,18 +1,26 @@
 {
-  "TRAIN_NO": "12274",
+  "TRAIN_NO": "20601",
   "TRAIN_COACH": "SL",
-  "TRAVEL_DATE": "19/03/2024",
-  "SOURCE_STATION": "NDLS",
+  "TRAVEL_DATE": "10/05/2024",
+  "SOURCE_STATION": "MAS",
   "BOARDING_STATION": null,
-  "DESTINATION_STATION": "PNBE",
+  "DESTINATION_STATION": "BDNK",
   "TATKAL": false,
+  "PREMIUM TATKAL" : false,
   "UPI_ID": "",
   "PASSENGER_DETAILS": [
     {
-      "NAME": "Shivam Pandey",
-      "AGE": 26,
+      "NAME": "Kaandieepan S",
+      "AGE": 21,
       "GENDER": "Male",
       "SEAT": "Side Lower",
+      "FOOD": "No Food"
+    },
+    {
+      "NAME": "Keerthana K",
+      "AGE": 21,
+      "GENDER": "Female",
+      "SEAT": "Side Upper",
       "FOOD": "No Food"
     }
   ],
