@@ -1,4 +1,4 @@
-# IRCTC Tatkal Cypress Automation !
+<!-- # IRCTC Tatkal Cypress Automation !
 
 ### Now book your tatkal tickets under 1 min at ease by bypassing captcha and filling multiple passenger details at once. Let the script book it for you.
 
@@ -143,4 +143,4 @@ set GOOGLE_APPLICATION_CREDENTIALS=C:\GOOGLE_APPLICATION_CREDENTIALS\credentials
  ```
 
 
-
+ -->
