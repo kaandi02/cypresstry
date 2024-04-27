@@ -1,15 +1,14 @@
 {
   "name": "irctc-cypress-automation",
-  "version": "1.0.0",
+  "version": "1.100.0",
   "description": "IRCTC Ticket Booking",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "SHivam Pandey",
-  "license": "ISC",
+  "author": "im83.75",
   "devDependencies": {
-    "cypress": "^13.7.0",
+    "cypress": "^13.8.1",
     "dayjs": "^1.11.10"
   }
 }

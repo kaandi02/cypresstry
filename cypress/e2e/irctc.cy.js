@@ -174,7 +174,15 @@ describe('IRCTC TATKAL BOOKING', () => {
             }
           })
 
+          // For Coach Number
+          // cy.get('input[formcontrolname="coachId"]').each((inputDiv, index) => {
 
+          //   cy.wrap(inputDiv).click()
+          //   cy.wrap(inputDiv).focused().clear()
+
+          //   cy.wrap(inputDiv).invoke('val', "S10").trigger('input')
+
+          // })
 
 
           // For Selecting "Book only if confirm berths are allotted.""

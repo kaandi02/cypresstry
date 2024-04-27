@@ -5,15 +5,29 @@
   "SOURCE_STATION": "TBM",
   "BOARDING_STATION": null,
   "DESTINATION_STATION": "CVP",
-  "TATKAL": false,
+  "TATKAL": true,
   "PREMIUM TATKAL" : false,
   "UPI_ID": "",
   "PASSENGER_DETAILS": [
     {
-      "NAME": "Kaandieepan S",
+      "NAME": "Kaandieepan Sathiyaseelan",
       "AGE": 21,
       "GENDER": "Male",
       "SEAT": "Side Lower",
+      "FOOD": "No Food"
+    },
+    {
+      "NAME": "Shamily K C",
+      "AGE": 21,
+      "GENDER": "Female",
+      "SEAT": "Side Lower",
+      "FOOD": "No Food"
+    },
+    {
+      "NAME": "Mary Fency J",
+      "AGE": 22,
+      "GENDER": "Female",
+      "SEAT": "Side Upper",
       "FOOD": "No Food"
     }
   ],
