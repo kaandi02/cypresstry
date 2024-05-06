@@ -187,9 +187,12 @@ describe('IRCTC TATKAL BOOKING', () => {
 
           // For Selecting "Book only if confirm berths are allotted.""
           cy.get('body').then((el) => {
-
             if (el[0].innerText.includes('Book only if confirm berths are allotted')) {
               cy.get(':nth-child(2) > .css-label_c').click()
+
+            }
+            if (el[0].innerText.includes('Consider for Auto Upgradation.')) {
+              cy.contains('Consider for Auto Upgradation.').click()
 
             }
           })
@@ -197,7 +200,7 @@ describe('IRCTC TATKAL BOOKING', () => {
 
 
           // Choosing UPI As Payment Option while filling passenger details
-          cy.get('#\\33 > .ui-radiobutton > .ui-radiobutton-box').click()
+          cy.get('#\\32 > .ui-radiobutton > .ui-radiobutton-box').click()
 
           // Proceed to NEXT STEP Final Confirmation 
           cy.get('.train_Search').click()
@@ -225,15 +228,15 @@ describe('IRCTC TATKAL BOOKING', () => {
           // if next page opens which is review booking stage
           cy.solveCaptcha().then(() => {
             // BHIM UPI At Gateway Confirmation
-            cy.get('.ng-star-inserted:nth-child(2) > .col-pad').click()
-            //cy.get('.col-sm-9 > app-bank > #bank-type').click()
-            //cy.get('.col-sm-9 > app-bank > #bank-type > :nth-child(2) > table > tr > :nth-child(1) > .col-lg-12 > .border-all > .col-xs-12 > .col-pad').click()
+            cy.get(':nth-child(3) > .col-pad').click()
+            cy.get('.col-sm-9 > app-bank > #bank-type').click()
+            cy.get('.col-sm-9 > app-bank > #bank-type > :nth-child(2) > table > tr > :nth-child(1) > .col-lg-12 > .border-all > .col-xs-12 > .col-pad').click()
 
             // Clicking Pay And book
             cy.get('.btn').click()
 
 
-            /*cy.intercept("/theia/processTransaction?orderid=*").as("payment")
+            cy.intercept("/theia/processTransaction?orderid=*").as("payment")
 
             // ...
             // https://securegw.paytm.in/theia/processTransaction?orderid=100004437462426
@@ -251,9 +254,7 @@ describe('IRCTC TATKAL BOOKING', () => {
               }
 
 
-            })*/
-
-
+            })
 
 
           })
