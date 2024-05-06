@@ -1,13 +1,13 @@
 {
   "TRAIN_NO": "20635",
   "TRAIN_COACH": "SL",
-  "TRAVEL_DATE": "10/05/2024",
+  "TRAVEL_DATE": "08/05/2024",
   "SOURCE_STATION": "TBM",
   "BOARDING_STATION": null,
-  "DESTINATION_STATION": "CVP",
-  "TATKAL": true,
+  "DESTINATION_STATION": "TEN",
+  "TATKAL": false,
   "PREMIUM TATKAL" : false,
-  "UPI_ID": "",
+  "UPI_ID": "abc@ybl",
   "PASSENGER_DETAILS": [
     {
       "NAME": "Kaandieepan Sathiyaseelan",
@@ -17,17 +17,24 @@
       "FOOD": "No Food"
     },
     {
-      "NAME": "Shamily K C",
+      "NAME": "Keerthana K",
       "AGE": 21,
       "GENDER": "Female",
+      "SEAT": "Middle",
+      "FOOD": "No Food"
+    },
+    {
+      "NAME": "Madhumitha V",
+      "AGE": 21,
+      "GENDER": "Side Upper",
       "SEAT": "Side Lower",
       "FOOD": "No Food"
     },
     {
-      "NAME": "Mary Fency J",
-      "AGE": 22,
+      "NAME": "Shamily K C",
+      "AGE": 21,
       "GENDER": "Female",
-      "SEAT": "Side Upper",
+      "SEAT": "Middle",
       "FOOD": "No Food"
     }
   ],
